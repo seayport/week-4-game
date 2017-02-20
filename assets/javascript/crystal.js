@@ -57,7 +57,7 @@ $('.pic4').on("click", function(){
 function checkit(){
 if (crystalValue === total) {
 	$("#winlossmessage").html("You won that round!");
-    $(".wins").html(win++);
+    $(".wins").html(win);
 
 }
 else if (crystalValue < total) {
