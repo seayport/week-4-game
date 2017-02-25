@@ -1,1 +1,1 @@
-<?php include_once("Crystal-Game.html"); ?>
+<?php include_once("Crystal_Game.html"); ?>
