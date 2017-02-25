@@ -62,16 +62,16 @@ $('.pic4').on("click", function(){
 //check to see if crystal value equals total
 function checkit(){
 if (crystalValue === total) {
-	$("#winlossmessage").html("You won that round!");
+	$(".winlossmessage").html("You won that round!");
     win = win + 1;
-    $("#wins").html(win);
+    $(".wins").html(win);
    //reset the game
    reset();
 	}
 else if (crystalValue < total) {
-	$("#winlossmessage").html("You lost that round!");
+	$(".winlossmessage").html("You lost that round!");
 	loss = loss + 1;
-    $("#losses").html(loss);
+    $(".losses").html(loss);
    //reset the game
    reset();
 	}

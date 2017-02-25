@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="assets/javascript/crystal.js"></script>
 	<meta charset="UTF-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Crystal Collector Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body>
-<h1> CrystalsCollector! </h1>
-
-<div class="instructions">
-<p> You will be given a random number at the start of the game. <br>There are four crystals below. By clicking on a crystal you will add a specific number of points to your total score.<br>You will win the game by matching your total score to the random number.<br> The value of each crystal is hidden from you until you click on it. <br>Each time when the game starts, the game will change the values of each crystal.</p>
+<body>	
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p id="data">Random Number</p>
+        <p id="data" class="numberToMatch"></p>
+        <p id="data" class="winlossmessage"></p>
+      </div>
+      <div class="well">
+        <p id="data">Wins  <span id="data" class="wins"></span></p>    
+      </div>
+      <div class="well">
+        <p id="data">Losses  <span class ="losses"></span></p>
+        </div>
+      <div class="well">
+        <p id="data">Total Score</p>
+        <p id="data"class="score"></p>
+      </div>
+    </div>
+    <div class="col-sm-10 text-left"> 
+      <h1>Crystal Collector Game</h1>
+      <br>
+      <p> You will be given a random number at the start of the game. <br>There are four crystals below. By clicking on a crystal,<br>
+       you will add a specific number of points to your total score.<br>You will win the game by matching your total score to the random number.<br> The value of each crystal is hidden from you until you click on it. <br>When the game starts over, new values will be loaded for each crystal.</p><hr>
+   <h2>Click on a Crystal to increase your total!</h2><hr>
+		<div class ="gemPics"><img src="assets/imagesGems/gem1.png" alt="crystal1" class="pic1"></div>
+		<div class ="gemPics"><img src="assets/imagesGems/gem2.png" alt="crystal2" class="pic2"></div>
+		<div class ="gemPics"><img src="assets/imagesGems/gem3.png" alt="crystal3" class="pic3"></div>
+		<div class ="gemPics"><img src="assets/imagesGems/gem4.png" alt="crystal4" class="pic4"></div>
+		<div class="col-md-2"></div>
+	</div>      
+    </div>
+  </div>
 </div>
-<div class="numberToMatch"></div>
-<div class="scoreBoard">
-	<ul>
-		<li><p id="winlossmessage"></p></li>
-		<li>Wins:<p id="wins"></p></li>
-		<li>Losses:<p id="losses"></p></li>
-	</ul>
-</div>
-<div class="gemPics">
-	<img src="assets/images-gems/gem1.png" alt="crystal1" class="pic1">
-	<img src="assets/images-gems/gem2.png" alt="crystal2" class="pic2">
-	<img src="assets/images-gems/gem3.png" alt="crystal3" class="pic3">
-	<img src="assets/images-gems/gem4.png" alt="crystal4" class="pic4">
-</div>
-<div>
-	<h3>Your total score is:</h3>
-	<p class="score"></p>
-</div>
-
-
-
+<footer class="container-fluid text-center ">
+  <p>&copy; Copyright 2017 Sandy Seay</p>
+</footer>
+	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="assets/javascript/crystal.js"></script>
 </body>
 </html>
